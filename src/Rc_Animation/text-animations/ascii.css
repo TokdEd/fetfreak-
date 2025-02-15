@@ -1,0 +1,28 @@
+.ascii-wrapper h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  
+  /* 平板（最大 1024px） */
+  @media (max-width: 1024px) {
+    .ascii-wrapper h1 {
+      font-size: 32px;
+      letter-spacing: 1.5px;
+    }
+  }
+  
+  /* 手機（最大 768px） */
+  @media (max-width: 768px) {
+    .ascii-wrapper h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+  }
+  
+  /* 小手機（最大 480px） */
+  @media (max-width: 480px) {
+    .ascii-wrapper h1 {
+      font-size: 18px;
+      letter-spacing: 0.5px;
+    }
+  }

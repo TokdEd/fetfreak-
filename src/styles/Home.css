@@ -1,0 +1,65 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.content-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ascii-wrapper {
+  margin-bottom: 0;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.market-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 3s ease;
+}
+
+.market-button:hover {
+  transform: scale(1.1);
+}
+
+/* 為了確保ASCII文字在黑色背景上清晰可見 */
+pre {
+  color: cyan !important;
+}
+
+ /*移除按鈕的預設外觀 */
+button {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+/* 確保動畫在整個容器中居中 */
+.ascii-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 确保 StarBorder 效果可见 */
+.star-border-container {
+  position: relative;
+  z-index: 10;
+}
