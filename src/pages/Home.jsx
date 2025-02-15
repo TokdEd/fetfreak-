@@ -18,10 +18,14 @@ const Home = () => {
     }
   }, []);
 
-  const handleAuth = () => {
-    if (!isLoggedIn) {
-      navigate('/login'); // 導向登入頁
+  const handleGoToMarket = () => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      navigate('/stock-market');
+    } else {
+      navigate('/login');
     }
+    
   };
 
   return (
@@ -39,10 +43,11 @@ const Home = () => {
         <div className="button-wrapper">
           <PixelCard
             as="button"
+            type = "submit"
             className="market-button"
             color="white"
             speed="3s"
-            onClick={handleAuth}
+            onClick={handleGoToMarket}
           >
             {isLoggedIn ? 'In' : 'Sign In / Sign Up'}
           </PixelCard>

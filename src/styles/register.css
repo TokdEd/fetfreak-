@@ -1,0 +1,58 @@
+/* stock-market-simulator/src/styles/register.css */
+
+/* 注册页面容器样式 */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使容器充满整个视口高度 */
+    background-color: #f0f0f0; /* 背景颜色 */
+}
+
+/* 注册表单包装样式 */
+.register-form-wrapper {
+    background-color: white; /* 表单背景颜色 */
+    padding: 20px;
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 表单标题样式 */
+.register-form-wrapper h2 {
+    margin-bottom: 20px; /* 标题下方间距 */
+}
+
+/* 错误消息样式 */
+.error-message {
+    color: red; /* 错误消息颜色 */
+    margin-bottom: 10px; /* 错误消息下方间距 */
+}
+
+/* 表单组样式 */
+.form-group {
+    margin-bottom: 15px; /* 表单组下方间距 */
+}
+
+/* 输入框样式 */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* 输入框宽度 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+}
+
+/* 提交按钮样式 */
+button {
+    background-color: cyan; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    border: none; /* 无边框 */
+    padding: 10px 15px; /* 内边距 */
+    border-radius: 4px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+}
+
+button:hover {
+    background-color: darkcyan; /* 悬停时按钮颜色 */
+}
